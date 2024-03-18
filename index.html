@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title> Loan Calculator </title>
+
+    <style>
+ @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Eczar&family=Open+Sans&family=Oswald&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=VT323&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+.{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    display:flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    background-color: rgb(187, 89, 89);
+    font-size: 14px;
+  }
+
+  .form-row {
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Lilita One', cursive;
+  }
+
+.headed{
+    font-family: 'VT323', monospace;
+    text-align: center;
+    font-size: 55px;
+    color:rgb(187, 20, 17);
+}
+
+.container{
+    width: 50%;
+    background-color:rgb(74, 190, 184);
+    padding: 30px;
+    border-radius: 5%;
+}
+
+.tableBox{
+    background-color:rgb(95, 160, 108);
+    font-size: 25px;
+    margin-top: 30px;
+    border-radius: 8px;
+    color:#34282c;
+    padding: 20px;
+}
+
+input{
+    padding: 8px;
+    margin-top: 10px;
+    border: none;
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+button{
+    font-size: 17px;
+    border-radius:5px;
+    text-shadow: 0cap;
+    font-family: 'Tektur', cursive;
+    background-color:rgb(221, 144, 238);
+}
+.button1{
+  text-align: right;
+}
+
+    </style>
+
+  </head>
+
+  <body>
+
+  <div class="container">
+
+    <h1 class="headed"> LOAN CALCULATOR </h1>
+    <form action="/" method="post">
+
+      <div id="tableBox">
+
+        <div class="form-row">
+          <h4>Principal Amount(in ₹):</h4>
+          <input type="number" name="principal">
+        </div>
+        <div class="form-row">
+          <h4>Interest Rate(in %):</h4>
+          <input type="number" name="interestRate">
+        </div>
+        <div class="form-row">
+          <h4>Tenure(in Months):</h4>
+          <input type="number" name="months">
+        </div>
+
+        <div class="button1">
+          <button type="submit" name="submit">Calculate</button>
+        </div>
+
+      </div>
+
+    </form>
+  </div>
+  
+  </body>
+</html>
